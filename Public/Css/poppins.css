@@ -1,0 +1,45 @@
+/* Fuente Poppins para uso local */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Poppins Light'), local('Poppins-Light'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-300.woff2') format('woff2'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-300.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Poppins Medium'), local('Poppins-Medium'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-500.woff2') format('woff2'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-600.woff2') format('woff2'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Poppins Bold'), local('Poppins-Bold'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-700.woff2') format('woff2'),
+         url('/Sistema-NASv3/Public/Css/fonts/poppins-v20-latin-700.woff') format('woff');
+}

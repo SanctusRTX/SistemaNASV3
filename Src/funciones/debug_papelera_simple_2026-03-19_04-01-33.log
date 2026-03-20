@@ -1,0 +1,7 @@
+2026-03-19 04:01:33 - Inicio de log
+2026-03-19 04:01:33 - === NUEVA SOLICITUD DE PAPELERA ===
+2026-03-19 04:01:33 - Datos POST: {"elemento":"20260319040107_VID_20260222_122003.mp4","accion":"eliminar_permanente"}
+2026-03-19 04:01:33 - Solicitud de eliminación permanente: 20260319040107_VID_20260222_122003.mp4
+2026-03-19 04:01:33 - Eliminando permanentemente de la papelera: 20260319040107_VID_20260222_122003.mp4
+2026-03-19 04:01:33 - Elemento eliminado permanentemente: 20260319040107_VID_20260222_122003.mp4
+2026-03-19 04:01:33 - Redirigiendo a: http://localhost/Sistema-NASv3/Src/index.php?modulo=papelera&accion_completada=1&t=1773889293

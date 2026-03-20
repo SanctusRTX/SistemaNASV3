@@ -1,0 +1,17 @@
+2026-03-19 03:56:29 - Inicio de log
+2026-03-19 03:56:29 - === NUEVA SOLICITUD DE PAPELERA ===
+2026-03-19 03:56:29 - Datos POST recibidos: {"elemento":"20260319035618_Documentos","accion":"restaurar"}
+2026-03-19 03:56:29 - Acción solicitada: restaurar
+2026-03-19 03:56:29 - Solicitud de restauración: 20260319035618_Documentos
+2026-03-19 03:56:29 - Restaurando elemento de la papelera: 20260319035618_Documentos
+2026-03-19 03:56:29 - Restaurando a la ruta original: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos
+2026-03-19 03:56:29 - Iniciando copia recursiva de carpeta: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos -> C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos
+2026-03-19 03:56:29 - Creando directorio de destino: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos
+2026-03-19 03:56:29 - Procesando: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos\Manual de usuario.docx
+2026-03-19 03:56:29 - Copiando archivo: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos\Manual de usuario.docx -> C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos\Manual de usuario.docx
+2026-03-19 03:56:29 - Copia recursiva completada con éxito: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos -> C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos
+2026-03-19 03:56:29 - Iniciando eliminación recursiva de carpeta: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos
+2026-03-19 03:56:29 - Eliminando: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos\Manual de usuario.docx
+2026-03-19 03:56:29 - Eliminación recursiva completada con éxito: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos
+2026-03-19 03:56:29 - Elemento restaurado correctamente: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos -> C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos
+2026-03-19 03:56:29 - Redirigiendo a: http://localhost/Sistema-NASv3/Src/index.php?modulo=papelera&accion_completada=1&t=1773888989

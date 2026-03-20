@@ -1,0 +1,44 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#ver-archivos {
+    max-width: 800px; /* Aumentar el ancho máximo para acomodar la nueva columna */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#ver-archivos h2 {
+    text-align: center;
+    color: #333;
+}
+
+#ver-archivos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ver-archivos th, #ver-archivos td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#ver-archivos th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#ver-archivos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#ver-archivos tr:hover {
+    background-color: #f1f1f1;
+}

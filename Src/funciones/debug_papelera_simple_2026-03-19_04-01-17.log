@@ -1,0 +1,10 @@
+2026-03-19 04:01:17 - Inicio de log
+2026-03-19 04:01:17 - === NUEVA SOLICITUD DE PAPELERA ===
+2026-03-19 04:01:17 - Datos POST: {"ruta":"Screenshot_20260228-163658.jpg","tipo":"archivo","accion":"eliminar"}
+2026-03-19 04:01:17 - Ruta relativa a eliminar: Screenshot_20260228-163658.jpg
+2026-03-19 04:01:17 - Tipo de elemento: archivo
+2026-03-19 04:01:17 - Ruta absoluta construida: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Screenshot_20260228-163658.jpg
+2026-03-19 04:01:17 - Moviendo a papelera: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Screenshot_20260228-163658.jpg
+2026-03-19 04:01:17 - Ruta destino en papelera: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319040117_Screenshot_20260228-163658.jpg
+2026-03-19 04:01:17 - Elemento movido correctamente a la papelera
+2026-03-19 04:01:17 - Redirigiendo a: http://localhost/Sistema-NASv3/Src/index.php?carpeta=Archivos+Subidos+Nuevo+v2%2FPrueba+de+nuevo+v2&eliminado=1&t=1773889277

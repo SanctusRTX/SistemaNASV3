@@ -1,0 +1,285 @@
+/**
+ * Estilos para tooltips animados en el Sistema NAS
+ */
+
+/* Base para todos los tooltips */
+.tooltip {
+    position: absolute;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+}
+
+/* Estilos personalizados para el tooltip */
+.tooltip-inner {
+    max-width: 200px;
+    padding: 8px 12px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(33, 37, 41, 0.9);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    font-size: 0.85rem;
+    backdrop-filter: blur(4px);
+}
+
+/* Flecha del tooltip */
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* Posicionamiento de la flecha según la posición del tooltip */
+.tooltip[data-popper-placement^="top"] .tooltip-arrow {
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: rgba(33, 37, 41, 0.9);
+}
+
+.tooltip[data-popper-placement^="bottom"] .tooltip-arrow {
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: rgba(33, 37, 41, 0.9);
+}
+
+.tooltip[data-popper-placement^="right"] .tooltip-arrow {
+    left: -5px;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: rgba(33, 37, 41, 0.9);
+}
+
+.tooltip[data-popper-placement^="left"] .tooltip-arrow {
+    right: -5px;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: rgba(33, 37, 41, 0.9);
+}
+
+/* Animaciones para los tooltips */
+.tooltip.fade {
+    transition: opacity 0.15s linear;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+/* Animaciones según la posición */
+.tooltip[data-popper-placement^="top"].tooltip-animated {
+    transform: translateY(10px);
+}
+
+.tooltip[data-popper-placement^="bottom"].tooltip-animated {
+    transform: translateY(-10px);
+}
+
+.tooltip[data-popper-placement^="left"].tooltip-animated {
+    transform: translateX(10px);
+}
+
+.tooltip[data-popper-placement^="right"].tooltip-animated {
+    transform: translateX(-10px);
+}
+
+.tooltip.tooltip-animated.show {
+    transform: translate(0, 0);
+}
+
+/* Variantes de color para los tooltips */
+.tooltip-primary .tooltip-inner {
+    background-color: rgba(13, 110, 253, 0.9);
+}
+
+.tooltip-primary[data-popper-placement^="top"] .tooltip-arrow {
+    border-top-color: rgba(13, 110, 253, 0.9);
+}
+
+.tooltip-primary[data-popper-placement^="bottom"] .tooltip-arrow {
+    border-bottom-color: rgba(13, 110, 253, 0.9);
+}
+
+.tooltip-primary[data-popper-placement^="left"] .tooltip-arrow {
+    border-left-color: rgba(13, 110, 253, 0.9);
+}
+
+.tooltip-primary[data-popper-placement^="right"] .tooltip-arrow {
+    border-right-color: rgba(13, 110, 253, 0.9);
+}
+
+.tooltip-success .tooltip-inner {
+    background-color: rgba(25, 135, 84, 0.9);
+}
+
+.tooltip-success[data-popper-placement^="top"] .tooltip-arrow {
+    border-top-color: rgba(25, 135, 84, 0.9);
+}
+
+.tooltip-success[data-popper-placement^="bottom"] .tooltip-arrow {
+    border-bottom-color: rgba(25, 135, 84, 0.9);
+}
+
+.tooltip-success[data-popper-placement^="left"] .tooltip-arrow {
+    border-left-color: rgba(25, 135, 84, 0.9);
+}
+
+.tooltip-success[data-popper-placement^="right"] .tooltip-arrow {
+    border-right-color: rgba(25, 135, 84, 0.9);
+}
+
+.tooltip-danger .tooltip-inner {
+    background-color: rgba(220, 53, 69, 0.9);
+}
+
+.tooltip-danger[data-popper-placement^="top"] .tooltip-arrow {
+    border-top-color: rgba(220, 53, 69, 0.9);
+}
+
+.tooltip-danger[data-popper-placement^="bottom"] .tooltip-arrow {
+    border-bottom-color: rgba(220, 53, 69, 0.9);
+}
+
+.tooltip-danger[data-popper-placement^="left"] .tooltip-arrow {
+    border-left-color: rgba(220, 53, 69, 0.9);
+}
+
+.tooltip-danger[data-popper-placement^="right"] .tooltip-arrow {
+    border-right-color: rgba(220, 53, 69, 0.9);
+}
+
+.tooltip-warning .tooltip-inner {
+    background-color: rgba(255, 193, 7, 0.9);
+    color: #212529;
+}
+
+.tooltip-warning[data-popper-placement^="top"] .tooltip-arrow {
+    border-top-color: rgba(255, 193, 7, 0.9);
+}
+
+.tooltip-warning[data-popper-placement^="bottom"] .tooltip-arrow {
+    border-bottom-color: rgba(255, 193, 7, 0.9);
+}
+
+.tooltip-warning[data-popper-placement^="left"] .tooltip-arrow {
+    border-left-color: rgba(255, 193, 7, 0.9);
+}
+
+.tooltip-warning[data-popper-placement^="right"] .tooltip-arrow {
+    border-right-color: rgba(255, 193, 7, 0.9);
+}
+
+.tooltip-info .tooltip-inner {
+    background-color: rgba(13, 202, 240, 0.9);
+}
+
+.tooltip-info[data-popper-placement^="top"] .tooltip-arrow {
+    border-top-color: rgba(13, 202, 240, 0.9);
+}
+
+.tooltip-info[data-popper-placement^="bottom"] .tooltip-arrow {
+    border-bottom-color: rgba(13, 202, 240, 0.9);
+}
+
+.tooltip-info[data-popper-placement^="left"] .tooltip-arrow {
+    border-left-color: rgba(13, 202, 240, 0.9);
+}
+
+.tooltip-info[data-popper-placement^="right"] .tooltip-arrow {
+    border-right-color: rgba(13, 202, 240, 0.9);
+}
+
+/* Estilos para modo oscuro */
+[data-bs-theme="dark"] .tooltip-inner {
+    background-color: rgba(248, 249, 250, 0.9);
+    color: #212529;
+}
+
+[data-bs-theme="dark"] .tooltip[data-popper-placement^="top"] .tooltip-arrow {
+    border-top-color: rgba(248, 249, 250, 0.9);
+}
+
+[data-bs-theme="dark"] .tooltip[data-popper-placement^="bottom"] .tooltip-arrow {
+    border-bottom-color: rgba(248, 249, 250, 0.9);
+}
+
+[data-bs-theme="dark"] .tooltip[data-popper-placement^="left"] .tooltip-arrow {
+    border-left-color: rgba(248, 249, 250, 0.9);
+}
+
+[data-bs-theme="dark"] .tooltip[data-popper-placement^="right"] .tooltip-arrow {
+    border-right-color: rgba(248, 249, 250, 0.9);
+}
+
+/* Animación de entrada y salida */
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes tooltipFadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.tooltip.tooltip-animated.show {
+    animation: tooltipFadeIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tooltip.tooltip-animated.hide {
+    animation: tooltipFadeOut 0.2s forwards;
+}
+
+/* Efecto de brillo en hover */
+.tooltip.tooltip-animated.show .tooltip-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.tooltip.tooltip-animated.show .tooltip-inner::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    animation: tooltipShine 3s linear infinite;
+}
+
+@keyframes tooltipShine {
+    from {
+        transform: translateX(-100%) rotate(30deg);
+    }
+    to {
+        transform: translateX(100%) rotate(30deg);
+    }
+}

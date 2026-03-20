@@ -1,0 +1,9 @@
+2026-03-19 04:01:38 - Inicio de log
+2026-03-19 04:01:38 - === NUEVA SOLICITUD DE PAPELERA ===
+2026-03-19 04:01:38 - Datos POST recibidos: {"elemento":"20260319040004_sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg","accion":"restaurar"}
+2026-03-19 04:01:38 - Acción solicitada: restaurar
+2026-03-19 04:01:38 - Solicitud de restauración: 20260319040004_sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg
+2026-03-19 04:01:38 - Restaurando elemento de la papelera: 20260319040004_sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg
+2026-03-19 04:01:38 - Restaurando a la ruta original: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Fotos\sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg
+2026-03-19 04:01:38 - Elemento restaurado correctamente: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319040004_sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg -> C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Fotos\sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg
+2026-03-19 04:01:38 - Redirigiendo a: http://localhost/Sistema-NASv3/Src/index.php?modulo=papelera&accion_completada=1&t=1773889298

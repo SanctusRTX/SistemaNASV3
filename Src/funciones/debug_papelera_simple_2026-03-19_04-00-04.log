@@ -1,0 +1,10 @@
+2026-03-19 04:00:04 - Inicio de log
+2026-03-19 04:00:04 - === NUEVA SOLICITUD DE PAPELERA ===
+2026-03-19 04:00:04 - Datos POST: {"ruta":"Fotos\/sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg","tipo":"archivo","accion":"eliminar"}
+2026-03-19 04:00:04 - Ruta relativa a eliminar: Fotos/sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg
+2026-03-19 04:00:04 - Tipo de elemento: archivo
+2026-03-19 04:00:04 - Ruta absoluta construida: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Fotos\sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg
+2026-03-19 04:00:04 - Moviendo a papelera: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Fotos\sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg
+2026-03-19 04:00:04 - Ruta destino en papelera: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319040004_sample_f4b77e9cc542572a7266aa3ae6cf267b.jpg
+2026-03-19 04:00:04 - Elemento movido correctamente a la papelera
+2026-03-19 04:00:04 - Redirigiendo a: http://192.168.0.106/Sistema-NASv3/Src/index.php?carpeta=Fotos&eliminado=1&t=1773889204

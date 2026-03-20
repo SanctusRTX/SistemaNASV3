@@ -1,0 +1,159 @@
+/**
+ * Estilos para botones de funciones del Sistema NAS
+ * Implementa un diseño con fondo gris e iconos blancos
+ * Con excepciones especiales para papelera (rojo) y modo oscuro
+ */
+
+/* Estilo base para todos los botones de funciones */
+.btn-funcion {
+    background-color: #6c757d; /* Gris Bootstrap */
+    border-color: #6c757d;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-funcion:hover {
+    background-color: #5a6268; /* Gris más oscuro al pasar el mouse */
+    border-color: #545b62;
+    color: white;
+}
+
+/* Asegurar que los iconos dentro de los botones sean blancos */
+.btn-funcion i, 
+.btn-funcion .fas, 
+.btn-funcion .far, 
+.btn-funcion .fab, 
+.btn-funcion .fa,
+.btn-funcion .icon {
+    color: white !important;
+}
+
+/* Variantes para diferentes tipos de botones */
+.btn-funcion.btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-funcion.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-funcion.btn-success {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Excepción para el botón de papelera (rojo) */
+.btn-funcion.btn-danger,
+button[name="papelera"],
+.btn-papelera {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+
+.btn-funcion.btn-danger:hover,
+button[name="papelera"]:hover,
+.btn-papelera:hover {
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+}
+
+.btn-funcion.btn-warning {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-funcion.btn-info {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-funcion.btn-outline-primary,
+.btn-funcion.btn-outline-secondary,
+.btn-funcion.btn-outline-success,
+.btn-funcion.btn-outline-danger,
+.btn-funcion.btn-outline-warning,
+.btn-funcion.btn-outline-info {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+}
+
+/* Modificar los iconos SVG para que sean blancos */
+.btn-funcion .icon {
+    background-color: transparent;
+}
+
+.btn-funcion .icon-folder,
+.btn-funcion .icon-folder-open,
+.btn-funcion .icon-file,
+.btn-funcion .icon-file-alt,
+.btn-funcion .icon-edit,
+.btn-funcion .icon-trash,
+.btn-funcion .icon-trash-alt,
+.btn-funcion .icon-download,
+.btn-funcion .icon-upload,
+.btn-funcion .icon-sync-alt,
+.btn-funcion .icon-folder-plus,
+.btn-funcion .icon-copy {
+    /* Usar filtro CSS para convertir cualquier color a blanco */
+    filter: brightness(0) invert(1);
+}
+
+/* Estilos mejorados para el interruptor de modo oscuro */
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #3AB397 !important;
+    border-color: #3AB397 !important;
+}
+
+.custom-switch .custom-control-label::before {
+    height: 1.25rem;
+    width: 2.25rem;
+    border-radius: 0.625rem;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.custom-switch .custom-control-label::after {
+    top: calc(0.25rem + 2px);
+    left: calc(-2.25rem + 2px);
+    width: calc(1.25rem - 4px);
+    height: calc(1.25rem - 4px);
+    background-color: #adb5bd;
+    border-radius: 0.625rem;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #fff;
+    transform: translateX(1rem);
+}
+
+/* Contenedor del interruptor de modo oscuro */
+.modo-oscuro-container {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.modo-oscuro-container span {
+    margin-right: 10px;
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Estilos para modo oscuro activado */
+body.dark-mode .modo-oscuro-container {
+    background-color: #343a40;
+}
+
+body.dark-mode .modo-oscuro-container span {
+    color: #e9ecef;
+}

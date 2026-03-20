@@ -1,0 +1,11 @@
+2026-03-19 03:56:18 - Inicio de log
+2026-03-19 03:56:18 - === NUEVA SOLICITUD DE PAPELERA ===
+2026-03-19 03:56:18 - Datos POST: {"ruta":"Documentos","tipo":"carpeta","accion":"eliminar"}
+2026-03-19 03:56:18 - Ruta relativa a eliminar: Documentos
+2026-03-19 03:56:18 - Tipo de elemento: carpeta
+2026-03-19 03:56:18 - Ruta absoluta construida: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos
+2026-03-19 03:56:18 - Moviendo a papelera: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos
+2026-03-19 03:56:18 - Ruta destino en papelera: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos
+2026-03-19 03:56:18 - Moviendo carpeta recursivamente: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Documentos -> C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319035618_Documentos
+2026-03-19 03:56:18 - Elemento movido correctamente a la papelera
+2026-03-19 03:56:18 - Redirigiendo a: http://localhost/Sistema-NASv3/Src/index.php?carpeta=Documentos&eliminado=1&t=1773888978

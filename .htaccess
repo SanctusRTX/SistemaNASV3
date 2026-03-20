@@ -1,0 +1,6 @@
+# Aumentar límites de subida de archivos
+php_value upload_max_filesize 10000M
+php_value post_max_size 10000M
+php_value memory_limit 1000M
+php_value max_execution_time 300
+php_value max_input_time 300

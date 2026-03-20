@@ -1,0 +1,131 @@
+[2025-05-14 20:34:57] Iniciando script de creación de archivo directo
+[2025-05-14 20:34:57] Datos POST recibidos: Array
+(
+    [nombre_archivo] => Probandov2
+    [extension] => .txt
+    [contenido] => text generic 222
+    [carpeta_destino] => C:/xampp/htdocs/Sistema-NASv2/Src/vistas/admin/modulos/../../../Almacenamiento/Documentos
+)
+
+[2025-05-14 20:34:57] Nombre archivo: Probandov2
+[2025-05-14 20:34:57] Extensión: .txt
+[2025-05-14 20:34:57] Carpeta destino: C:/xampp/htdocs/Sistema-NASv2/Src/vistas/admin/modulos/../../../Almacenamiento/Documentos
+[2025-05-14 20:34:57] Nombre completo archivo: Probandov2.txt
+[2025-05-14 20:34:57] Ruta base: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento
+[2025-05-14 20:34:57] Carpeta relativa: C:/xampp/htdocs/Sistema-NASv2/Src/vistas/admin/modulos/../../../Documentos
+[2025-05-14 20:34:57] ADVERTENCIA: La carpeta de destino no existe: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento\C:/xampp/htdocs/Sistema-NASv2/Src/vistas/admin/modulos/../../../Documentos
+[2025-05-14 20:34:57] ERROR: No se pudo crear la carpeta de destino: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento\C:/xampp/htdocs/Sistema-NASv2/Src/vistas/admin/modulos/../../../Documentos
+[2025-05-14 20:35:17] Iniciando script de creación de archivo directo
+[2025-05-14 20:35:17] Datos POST recibidos: Array
+(
+    [nombre_archivo] => Probandov2
+    [extension] => .txt
+    [contenido] => texttextext
+    [carpeta_destino] => Almacenamiento
+)
+
+[2025-05-14 20:35:17] Nombre archivo: Probandov2
+[2025-05-14 20:35:17] Extensión: .txt
+[2025-05-14 20:35:17] Carpeta destino: Almacenamiento
+[2025-05-14 20:35:17] Nombre completo archivo: Probandov2.txt
+[2025-05-14 20:35:17] Ruta base: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento
+[2025-05-14 20:35:17] Ruta de destino: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento
+[2025-05-14 20:35:17] Ruta completa: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento\Probandov2.txt
+[2025-05-14 20:35:17] Archivo creado con fopen/fwrite. Bytes escritos: 11
+[2025-05-14 20:35:17] Archivo creado exitosamente: Probandov2.txt en C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento\Probandov2.txt
+[2025-05-14 20:39:55] Iniciando script de creación de archivo directo
+[2025-05-14 20:39:55] Datos POST recibidos: Array
+(
+    [nombre_archivo] => Probandov4
+    [extension] => .txt
+    [contenido] => texto xD
+    [carpeta_destino] => Documentos
+)
+
+[2025-05-14 20:39:55] Nombre archivo: Probandov4
+[2025-05-14 20:39:55] Extensión: .txt
+[2025-05-14 20:39:55] Carpeta destino: Documentos
+[2025-05-14 20:39:55] Nombre completo archivo: Probandov4.txt
+[2025-05-14 20:39:55] Ruta base: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento
+[2025-05-14 20:39:55] Carpeta destino seleccionada: Documentos
+[2025-05-14 20:39:55] Ruta de destino: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento\Documentos
+[2025-05-14 20:39:55] Ruta completa: C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento\Documentos\Probandov4.txt
+[2025-05-14 20:39:55] Archivo creado con fopen/fwrite. Bytes escritos: 8
+[2025-05-14 20:39:55] Archivo creado exitosamente: Probandov4.txt en C:\xampp\htdocs\Sistema-NASv2\Src\Almacenamiento\Documentos\Probandov4.txt
+[2025-05-22 19:36:22] Iniciando script de creación de archivo directo
+[2025-05-22 19:36:22] Datos POST recibidos: Array
+(
+    [nombre_archivo] => Raul
+    [extension] => .txt
+    [contenido] => El pepe
+    [carpeta_destino] => Uptt
+)
+
+[2025-05-22 19:36:22] Nombre archivo: Raul
+[2025-05-22 19:36:22] Extensión: .txt
+[2025-05-22 19:36:22] Carpeta destino: Uptt
+[2025-05-22 19:36:22] Nombre completo archivo: Raul.txt
+[2025-05-22 19:36:22] Ruta base: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento
+[2025-05-22 19:36:22] Carpeta destino seleccionada: Uptt
+[2025-05-22 19:36:22] Ruta de destino: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Uptt
+[2025-05-22 19:36:22] Ruta completa: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Uptt\Raul.txt
+[2025-05-22 19:36:22] Archivo creado con fopen/fwrite. Bytes escritos: 7
+[2025-05-22 19:36:22] Archivo creado exitosamente: Raul.txt en C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Uptt\Raul.txt
+[2025-05-31 15:50:24] Iniciando script de creación de archivo directo
+[2025-05-31 15:50:25] Datos POST recibidos: Array
+(
+    [nombre_archivo] => pruebav4
+    [extension] => .txt
+    [editor_type] => tiny
+    [contenido] => <p>hola</p>
+    [carpeta_destino] => Almacenamiento
+)
+
+[2025-05-31 15:50:25] Nombre archivo: pruebav4
+[2025-05-31 15:50:25] Extensión: .txt
+[2025-05-31 15:50:25] Carpeta destino: Almacenamiento
+[2025-05-31 15:50:25] Nombre completo archivo: pruebav4.txt
+[2025-05-31 15:50:25] Ruta base: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento
+[2025-05-31 15:50:25] Ruta de destino: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento
+[2025-05-31 15:50:25] Ruta completa: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\pruebav4.txt
+[2025-05-31 15:50:25] Archivo creado con fopen/fwrite. Bytes escritos: 11
+[2025-05-31 15:50:25] Archivo creado exitosamente: pruebav4.txt en C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\pruebav4.txt
+[2025-06-27 16:29:55] Iniciando script de creación de archivo directo
+[2025-06-27 16:29:55] Datos POST recibidos: Array
+(
+    [nombre_archivo] => RAP
+    [extension] => .txt
+    [editor_type] => simple
+    [contenido] => RAP
+    [carpeta_destino] => Archivos Subidos
+)
+
+[2025-06-27 16:29:55] Nombre archivo: RAP
+[2025-06-27 16:29:55] Extensión: .txt
+[2025-06-27 16:29:55] Carpeta destino: Archivos Subidos
+[2025-06-27 16:29:55] Nombre completo archivo: RAP.txt
+[2025-06-27 16:29:55] Ruta base: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento
+[2025-06-27 16:29:55] Carpeta destino seleccionada: Archivos Subidos
+[2025-06-27 16:29:55] Ruta de destino: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Archivos Subidos
+[2025-06-27 16:29:55] Ruta completa: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Archivos Subidos\RAP.txt
+[2025-06-27 16:29:55] Archivo creado con fopen/fwrite. Bytes escritos: 3
+[2025-06-27 16:29:55] Archivo creado exitosamente: RAP.txt en C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Archivos Subidos\RAP.txt
+[2025-07-15 16:57:38] Iniciando script de creación de archivo directo
+[2025-07-15 16:57:38] Datos POST recibidos: Array
+(
+    [nombre_archivo] => Proyecto
+    [extension] => .txt
+    [editor_type] => tiny
+    [contenido] => <p>&nbsp;Holsa soy ypo josue santos el dia de hoy estoy ccreando un archivo&nbsp;</p>
+    [carpeta_destino] => Almacenamiento
+)
+
+[2025-07-15 16:57:38] Nombre archivo: Proyecto
+[2025-07-15 16:57:38] Extensión: .txt
+[2025-07-15 16:57:38] Carpeta destino: Almacenamiento
+[2025-07-15 16:57:38] Nombre completo archivo: Proyecto.txt
+[2025-07-15 16:57:38] Ruta base: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento
+[2025-07-15 16:57:38] Ruta de destino: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento
+[2025-07-15 16:57:38] Ruta completa: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Proyecto.txt
+[2025-07-15 16:57:38] Archivo creado con fopen/fwrite. Bytes escritos: 85
+[2025-07-15 16:57:38] Archivo creado exitosamente: Proyecto.txt en C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Proyecto.txt

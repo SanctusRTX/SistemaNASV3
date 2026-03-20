@@ -1,0 +1,58 @@
+/* 
+ * Correcciones para la barra lateral
+ * Sistema NAS v3
+ */
+
+/* Asegurar que la barra lateral sea visible por defecto en escritorio */
+@media (min-width: 992px) {
+    #sidebar {
+        display: block;
+        transition: all 0.3s ease;
+    }
+    
+    /* Permitir que la barra lateral se oculte cuando tenga la clase d-none */
+    #sidebar.d-none {
+        display: none !important;
+    }
+    
+    /* Ajustes para el contenido principal cuando la barra lateral está visible */
+    #sidebar:not(.d-none) + #mainContent {
+        width: 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    
+    /* Ajustes para el contenido principal cuando la barra lateral está oculta */
+    #sidebar.d-none + #mainContent {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Mejorar la visibilidad del botón de toggle */
+#toggleSidebar {
+    background-color: #3AB397;
+    color: white;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+#toggleSidebar:hover {
+    background-color: #2a8c76;
+    transform: scale(1.05);
+}
+
+/* Mejorar el botón móvil */
+#toggleSidebarMobile {
+    background-color: #3AB397;
+    color: white;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+#toggleSidebarMobile:hover {
+    background-color: #2a8c76;
+}

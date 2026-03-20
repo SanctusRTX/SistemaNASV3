@@ -1,0 +1,10 @@
+2026-03-19 04:01:07 - Inicio de log
+2026-03-19 04:01:07 - === NUEVA SOLICITUD DE PAPELERA ===
+2026-03-19 04:01:07 - Datos POST: {"ruta":"Archivos Subidos Nuevo v2\/Prueba de nuevo v2\/VID_20260222_122003.mp4","tipo":"archivo","accion":"eliminar"}
+2026-03-19 04:01:07 - Ruta relativa a eliminar: Archivos Subidos Nuevo v2/Prueba de nuevo v2/VID_20260222_122003.mp4
+2026-03-19 04:01:07 - Tipo de elemento: archivo
+2026-03-19 04:01:07 - Ruta absoluta construida: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Archivos Subidos Nuevo v2\Prueba de nuevo v2\VID_20260222_122003.mp4
+2026-03-19 04:01:07 - Moviendo a papelera: C:\xampp\htdocs\Sistema-NASv3\Src\Almacenamiento\Archivos Subidos Nuevo v2\Prueba de nuevo v2\VID_20260222_122003.mp4
+2026-03-19 04:01:07 - Ruta destino en papelera: C:\xampp\htdocs\Sistema-NASv3\Papelera\20260319040107_VID_20260222_122003.mp4
+2026-03-19 04:01:08 - Elemento movido correctamente a la papelera
+2026-03-19 04:01:08 - Redirigiendo a: http://localhost/Sistema-NASv3/Src/index.php?carpeta=Archivos+Subidos+Nuevo+v2%2FPrueba+de+nuevo+v2&eliminado=1&t=1773889268
