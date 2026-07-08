@@ -1,0 +1,334 @@
+/* Estilos para la vista de explorador de Windows */
+
+/* Estilos comunes para ambas vistas */
+.vista-controles {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+.vista-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vista-btn:hover {
+    background-color: #e9ecef;
+}
+
+.vista-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.vista-btn i {
+    margin-right: 5px;
+}
+
+/* Vista de cuadrícula */
+.vista-cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    width: 100%;
+}
+
+.vista-cuadricula .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 200px;
+    overflow: visible;
+    border: 3px solid #3AB397;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.vista-cuadricula .item:hover {
+    background-color: #e8f5f2;
+    border-color: #2a8974;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transform: translateY(-3px);
+}
+
+.vista-cuadricula .item-icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    order: 1;
+}
+
+.vista-cuadricula .item-name {
+    width: 100%;
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 3px 0;
+    border-bottom: 1px dashed #ddd;
+    min-height: 40px;
+    order: 2;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.3;
+    overflow: hidden;
+}
+
+.vista-cuadricula .item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #6c757d;
+    width: 100%;
+    margin-top: auto;
+    background-color: rgba(248, 249, 250, 0.8);
+    padding: 5px;
+    border-radius: 3px;
+    order: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.vista-cuadricula .item-size,
+.vista-cuadricula .item-count,
+.vista-cuadricula .item-date {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 2px 0;
+}
+
+.vista-cuadricula .item-actions {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.vista-cuadricula .item:hover .item-actions {
+    display: flex;
+}
+
+.vista-cuadricula .carpeta .item-icon {
+    color: #ffc107;
+}
+
+.vista-cuadricula .archivo .item-icon {
+    color: #6c757d;
+}
+
+/* Vista de lista */
+.vista-lista {
+    width: 100%;
+}
+
+.vista-lista .item {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border: 3px solid #3AB397;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    position: relative;
+    min-height: 60px;
+}
+
+.vista-lista .item:hover {
+    background-color: #e8f5f2;
+    border-color: #2a8974;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.vista-lista .item-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    min-width: 20px;
+}
+
+.vista-lista .item-name {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 200px;
+    max-width: 40%;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-right: 10px;
+    border-right: 1px dashed #ddd;
+    z-index: 2;
+}
+
+.vista-lista .item-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #6c757d;
+    font-size: 0.85rem;
+    background-color: rgba(248, 249, 250, 0.8);
+    padding: 3px 8px;
+    border-radius: 3px;
+    flex-wrap: wrap;
+    max-width: 30%;
+    z-index: 1;
+}
+
+.vista-lista .item-size,
+.vista-lista .item-count,
+.vista-lista .item-date {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.vista-lista .item-actions {
+    display: none;
+    margin-left: 10px;
+}
+
+.vista-lista .item:hover .item-actions {
+    display: flex;
+}
+
+.vista-lista .carpeta .item-icon {
+    color: #ffc107;
+}
+
+.vista-lista .archivo .item-icon {
+    color: #6c757d;
+}
+
+/* Estilos para los botones de acción */
+.item-actions .btn {
+    padding: 2px 5px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+/* Estilos para el menú contextual */
+.context-menu {
+    display: none;
+    position: fixed; /* Cambiado a fixed para mejor comportamiento en móviles */
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    z-index: 9999; /* Z-index muy alto para asegurar visibilidad */
+    min-width: 200px; /* Ancho mínimo para mejor usabilidad */
+    max-width: 90vw; /* Limitar ancho en dispositivos pequeños */
+    opacity: 1; /* Iniciar con opacidad completa para depurar */
+    transform: none; /* Eliminar transformación para depurar */
+    overflow: visible; /* Permitir ver si hay contenido que se desborda */
+    padding: 5px 0; /* Agregar padding interno */
+}
+
+.context-menu.active {
+    opacity: 1;
+    transform: none;
+    display: block; /* Forzar visibilidad cuando está activo */
+}
+
+.context-menu-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px;
+    user-select: none; /* Evitar selección de texto */
+    display: flex;
+    align-items: center;
+}
+
+.context-menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para dispositivos táctiles */
+@media (hover: none) {
+    .context-menu-item:active {
+        background-color: #e9ecef;
+    }
+    
+    .context-menu-item {
+        padding: 12px 16px; /* Botones más grandes para pantallas táctiles */
+    }
+}
+
+.context-menu-item i {
+    margin-right: 10px;
+    width: 18px;
+    text-align: center;
+    color: #007bff; /* Color de iconos para mejor visibilidad */
+}
+
+/* Estilos para modo oscuro */
+body.dark-mode .vista-controles {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+body.dark-mode .vista-btn {
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-mode .vista-btn:hover {
+    background-color: #3d3d3d;
+}
+
+body.dark-mode .vista-btn.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+body.dark-mode .vista-cuadricula .item:hover,
+body.dark-mode .vista-lista .item:hover {
+    background-color: #3d3d3d;
+    border-color: #4AC9AD;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
+}
+
+body.dark-mode .vista-lista .item {
+    border-color: #3AB397;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .context-menu {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+body.dark-mode .context-menu-item {
+    color: #e0e0e0;
+}
+
+body.dark-mode .context-menu-item:hover {
+    background-color: #3d3d3d;
+}

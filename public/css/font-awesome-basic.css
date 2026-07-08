@@ -1,0 +1,47 @@
+/* Archivo básico de Font Awesome con solo los iconos esenciales */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAO0AAsAAAAACFwAAANlAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDaIM0ATYCJAMUCwwABCAFhGcHSxt/BxEVnPHIfiZkcgn7o+gQD8oTc8Pmf4sHFKEY4uH/+/3a59z7vkiigUk0s5pJNEgkCZ1KgVAjZDKheYtQ8/3N9gECBPqWbBKuBqhZXVtNfcXVVOIDH0/+5+/l5iLUhJjHheGZ3y7gO2rUxMPz236Wd7I653XA44QGFFFsQBGwQArgDWOXF3GYwGC+pti5uHsAjgp0ViBuWE0NHBNlVQlkCM2oa8YW8RgaTdMD9AA8uj8fv0EEx0iaGdVo9UJfBxz+DD9X5WbFpoCzns6I7SNjAijEjdrEFZSImYCB4aY+zQlgMElSP8PPFZ/rPlfll92i1L+8RCSiRlRQu4/JLpjlZ+MzWQQ/V0Xhx2YGwmAFDAFegFiA+JVJ9ZQyyuOYzUdRUevr00ulwtFRye+XdTqxUMTIZBw7qS4uygeHd65eV5w8KR0eljVqsXx3mQGE5JWdWwYH8t278v37ulu3NLt21fTt2RvYfSDYfTC452CgU67fvqO/cVO7Y1dtTY1YoxL3Z8/M8dqtWXhEe/y44ciR+rMn74wO39HXnNi/t/7EkT0NG3bVbtlVs2lXzZbhYfO+0ZHR/c31o/vrr5w7P7x/cP/o/rP1e/fU79xdv31XbX29WKMW9/Vl9iQSBQEZQGaWtk2bGvfsaRwa0q5aVVdVJe7r0+3e3bBpU/2mzQ179zbu29e4f3/TgQNNhw41nTjRdOZM89mzzefONZ8/33zhQvPFi82XLjVfvtxy5UpLa6uEMaRvbGw+caLl8OHm1lbpqlUtV6+2XLvWcv168/XrTdeuNRw92tDSknFUwrS2Np861XLkSPOhQ81HjzafPdt8/nzL5cst1641tbVJjx9vvHix8caNpps3G1tbZWZTdXV1S0tL08GDTQcONO7f33jgQNOhQ81HjzafPt3c2tq4e7e0vl5aUyOtqpJWV0vr6mS1tfKaGkVlpbyyUlFdLa+tVdTXKxoaFI2NiqYmZVOTsrlZ2dKi3LJFtXWravt21c6dqt27VXv2qPbuVe3bp9q/X3XwoOrwYdXRo6rjx1WnTqnOnFGdO6e6cEF1+bLq6lXVjRvKmzflzc2yxkZZfb2svl5WVyevrZXX1Mjr6xUNDYrGRkVTk7K5WdnSoty6VbV9u2rnTtXu3ao9e1R796r27VMdOKA6dEh15Ijq2DHVyZOqM2dU586pLlxQXb6sunpVdeOG6uZN1e3bqrt3VXfvqu7dU92/r3rwQPXwoerRI9Xjx6onT1RPn6qePVM9f6568UL18qXq1SvV69eqN29Ub9+q3r1TvX+v+vBB9fGj6tMn1efPqi9fVF+/qr59U33/rvr5U/Xrl+r3b9U//xT/+/f/P3/+/wP3BZUm") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa,
+.fas {
+  font-family: 'FontAwesome';
+  font-weight: 900;
+}
+
+.fa-folder:before {
+  content: "\f07b";
+  color: #ffc107;
+}
+
+.fa-file:before {
+  content: "\f15b";
+  color: #6c757d;
+}
+
+.fa-edit:before {
+  content: "\f044";
+  color: #0d6efd;
+}
+
+.fa-file-alt:before {
+  content: "\f15c";
+  color: #0dcaf0;
+}

@@ -1,0 +1,1401 @@
+/* ==========================================================================
+   Aesthetic Dark Overlay - Nexus OS & Linear Style
+   ========================================================================== */
+
+:root {
+    --bg-dark-glass: rgba(13, 20, 38, 0.45);
+    --border-glass: rgba(255, 255, 255, 0.06);
+    --border-glass-hover: rgba(58, 179, 151, 0.3);
+    --accent-teal: #3AB397;
+    --accent-teal-glow: rgba(58, 179, 151, 0.25);
+    --bg-card-dark: #0f131c;
+    --bg-sidebar-dark: #090c12;
+    --text-muted-dark: #64748b;
+    --text-primary-dark: #f8fafc;
+}
+
+/* Aplicar tipografía Inter global si está disponible */
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Modo oscuro premium */
+body {
+    background-color: #07090e !important;
+    color: #e2e8f0 !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    background-color: #07090e !important;
+}
+
+body main {
+    background-color: #07090e !important;
+    flex: 1 1 auto;
+}
+
+/* Overlay del sidebar (móvil) — nunca ocupa espacio en el layout */
+.sidebar-overlay {
+    display: none !important;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    border: none;
+    pointer-events: none;
+    background: transparent;
+}
+
+.sidebar-overlay.show {
+    display: block !important;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .sidebar-overlay.show {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 769px) {
+    .sidebar-overlay,
+    .sidebar-overlay.show {
+        display: none !important;
+        pointer-events: none !important;
+    }
+}
+
+/* Navbar rediseñada */
+body nav.navbar {
+    background-color: var(--bg-sidebar-dark) !important;
+    border-bottom: 1px solid var(--border-glass) !important;
+    padding: 0.75rem 1.5rem !important;
+}
+
+/* Sidebar estilo Linear (mínimo, limpio, oscuro) */
+body #sidebar {
+    background-color: var(--bg-sidebar-dark) !important;
+    border-right: 1px solid var(--border-glass) !important;
+}
+
+body #sidebar aside {
+    background-color: transparent !important;
+    padding: 1.5rem !important;
+}
+
+body #sidebar hr {
+    border-top: 1px solid var(--border-glass) !important;
+    margin: 1.25rem 0;
+}
+
+/* Buscador en Sidebar */
+body .search-container input {
+    background-color: rgba(15, 23, 42, 0.6) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 8px !important;
+    color: #f1f5f9 !important;
+    font-size: 0.85rem !important;
+    padding: 0.5rem 0.75rem !important;
+    transition: all 0.25s ease !important;
+}
+
+body .search-container input:focus {
+    border-color: var(--accent-teal) !important;
+    box-shadow: 0 0 10px var(--accent-teal-glow) !important;
+}
+
+body .search-container .btn-primary {
+    background-color: var(--accent-teal) !important;
+    border-color: var(--accent-teal) !important;
+    border-radius: 0 8px 8px 0 !important;
+    color: #07090e !important;
+}
+
+/* Enlaces del Sidebar */
+body .nav-link {
+    color: #94a3b8 !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    padding: 0.65rem 0.75rem !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+body .nav-link:hover {
+    color: #f1f5f9 !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+body .nav-link.active {
+    color: var(--accent-teal) !important;
+    background-color: rgba(58, 179, 151, 0.06) !important;
+    border-left: 2px solid var(--accent-teal) !important;
+    border-radius: 0 6px 6px 0 !important;
+}
+
+/* Área de Contenido Principal */
+body #mainContent {
+    background-color: #07090e !important;
+}
+
+body #mainContent .container.border {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Barra de Herramientas / Botones Superiores */
+body .btn-funcion {
+    border-radius: 8px !important;
+    border: 1px solid var(--border-glass) !important;
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    color: #cbd5e1 !important;
+    transition: all 0.25s ease !important;
+    padding: 0.4rem 0.75rem !important;
+}
+
+body .btn-funcion:hover {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    border-color: var(--accent-teal) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+}
+
+body .btn-success {
+    background-color: rgba(16, 185, 129, 0.1) !important;
+    border-color: rgba(16, 185, 129, 0.2) !important;
+    color: #34d399 !important;
+}
+
+body .btn-success:hover {
+    background-color: rgba(16, 185, 129, 0.2) !important;
+    border-color: #34d399 !important;
+}
+
+/* Breadcrumb estilo Linear */
+body .card.shadow-sm {
+    background-color: var(--bg-card-dark) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+
+body .explorer-path {
+    background-color: transparent !important;
+    font-size: 0.85rem !important;
+}
+
+body .path-segment {
+    color: #94a3b8 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+body .path-segment:hover {
+    color: var(--accent-teal) !important;
+}
+
+body .path-segment.current {
+    color: #ffffff !important;
+}
+
+/* Vista de Controles del Explorador */
+body .vista-controles {
+    background-color: var(--bg-card-dark) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 10px !important;
+    margin-bottom: 1.25rem !important;
+}
+
+body .vista-btn {
+    border: 1px solid var(--border-glass) !important;
+    color: #94a3b8 !important;
+}
+
+body .vista-btn.active {
+    background-color: var(--accent-teal) !important;
+    border-color: var(--accent-teal) !important;
+    color: #07090e !important;
+    font-weight: 600 !important;
+}
+
+/* ==================== ITEMS DEL EXPLORADOR (CUADRÍCULA) ==================== */
+body .vista-cuadricula .item {
+    background-color: var(--bg-card-dark) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    height: 180px !important;
+    padding: 1.25rem !important;
+}
+
+body .vista-cuadricula .item:hover {
+    transform: translateY(-4px) !important;
+    border-color: var(--accent-teal) !important;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3), 0 0 15px var(--accent-teal-glow) !important;
+}
+
+body .vista-cuadricula .item-icon {
+    font-size: 2.5rem !important;
+    margin-bottom: 0.75rem !important;
+    transition: transform 0.3s ease !important;
+}
+
+body .vista-cuadricula .item:hover .item-icon {
+    transform: scale(1.08);
+}
+
+body .vista-cuadricula .carpeta .item-icon {
+    color: #f59e0b !important; /* Folder Amber */
+}
+
+body .vista-cuadricula .archivo .item-icon {
+    color: #60a5fa !important; /* File Blue */
+}
+
+body .vista-cuadricula .item-name {
+    color: #f1f5f9 !important;
+    border-bottom: none !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    min-height: auto !important;
+    margin-bottom: 0.5rem !important;
+}
+
+body .vista-cuadricula .item-info {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    border-top: 1px solid var(--border-glass) !important;
+    border-radius: 0 0 14px 14px !important;
+    padding: 0.5rem !important;
+}
+
+body .vista-cuadricula .item-size,
+body .vista-cuadricula .item-count,
+body .vista-cuadricula .item-date {
+    color: #64748b !important;
+    font-size: 0.75rem !important;
+}
+
+/* ==================== ITEMS DEL EXPLORADOR (LISTA) ==================== */
+body .vista-lista .item {
+    background-color: var(--bg-card-dark) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    margin-bottom: 0.5rem !important;
+    min-height: 54px !important;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.2s ease !important;
+}
+
+body .vista-lista .item:hover {
+    border-color: var(--accent-teal) !important;
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+body .vista-lista .item-name {
+    color: #f1f5f9 !important;
+    font-size: 0.9rem !important;
+    border-right: 1px solid var(--border-glass) !important;
+}
+
+body .vista-lista .item-info {
+    background-color: transparent !important;
+    color: #64748b !important;
+}
+
+body .vista-lista .carpeta .item-icon {
+    color: #f59e0b !important;
+}
+
+body .vista-lista .archivo .item-icon {
+    color: #60a5fa !important;
+}
+
+/* Modales */
+body .modal-content {
+    background-color: #0f131a !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+body .modal-header {
+    border-bottom: 1px solid var(--border-glass) !important;
+}
+
+body .modal-footer {
+    border-top: 1px solid var(--border-glass) !important;
+    background-color: transparent !important;
+}
+
+/* Formularios en general */
+body .form-control,
+body select.form-control,
+body textarea.form-control {
+    background-color: rgba(15, 23, 42, 0.5) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 8px !important;
+    color: #f1f5f9 !important;
+}
+
+body .form-control:focus,
+body select.form-control:focus,
+body textarea.form-control:focus {
+    border-color: var(--accent-teal) !important;
+    box-shadow: 0 0 8px var(--accent-teal-glow) !important;
+}
+
+/* Estilo para los paneles decorativos en las tarjetas de computadoras y usuarios */
+body .card {
+    background-color: var(--bg-card-dark) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 12px !important;
+}
+
+body .card-header {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    border-bottom: 1px solid var(--border-glass) !important;
+    color: #ffffff !important;
+}
+
+/* Botones de acción contextual */
+body .item-actions {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 6px !important;
+}
+
+body .item-actions .btn {
+    border-radius: 4px !important;
+}
+
+/* Personalizar barra de desplazamiento */
+body ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body ::-webkit-scrollbar-track {
+    background: #07090e;
+}
+
+body ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
+
+/* ==================== AESTHETIC MODULES & TABLES OVERRIDES ==================== */
+
+/* Tablas con estilo Glassmorphic */
+body .table {
+    color: #cbd5e1 !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+body .table th, 
+body .table td {
+    border-color: var(--border-glass) !important;
+    padding: 1rem 0.75rem !important;
+    vertical-align: middle !important;
+}
+
+body .table thead th {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    color: #ffffff !important;
+    font-size: 0.825rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    border-bottom: 2px solid var(--border-glass) !important;
+    border-top: none !important;
+}
+
+body .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    color: #ffffff !important;
+}
+
+/* Badges e indicadores de Estado */
+body .badge {
+    border-radius: 6px !important;
+    padding: 0.35em 0.65em !important;
+    font-weight: 600 !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.02em !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+body .badge-success {
+    background-color: rgba(16, 185, 129, 0.15) !important;
+    color: #34d399 !important;
+    border: 1px solid rgba(16, 185, 129, 0.25) !important;
+}
+
+body .badge-warning {
+    background-color: rgba(245, 158, 11, 0.15) !important;
+    color: #fbbf24 !important;
+    border: 1px solid rgba(245, 158, 11, 0.25) !important;
+}
+
+body .badge-danger {
+    background-color: rgba(239, 68, 68, 0.15) !important;
+    color: #fca5a5 !important;
+    border: 1px solid rgba(239, 68, 68, 0.25) !important;
+}
+
+body .badge-primary {
+    background-color: rgba(59, 130, 246, 0.15) !important;
+    color: #93c5fd !important;
+    border: 1px solid rgba(59, 130, 246, 0.25) !important;
+}
+
+/* Estilos de Formularios Avanzados */
+body select.form-control {
+    appearance: none !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2394a3b8'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 12px 12px !important;
+    padding-right: 2rem !important;
+}
+
+body label.form-label,
+body form label {
+    color: var(--text-secondary-dark) !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 0.5rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+body label i,
+body form label i {
+    color: var(--accent-teal) !important;
+}
+
+body .form-text.text-muted,
+body small.form-text {
+    color: #64748b !important;
+    font-size: 0.75rem !important;
+    margin-top: 0.4rem !important;
+}
+
+/* Área de Subida de Archivos (Uploader Card) */
+body .custom-file-label {
+    background-color: rgba(15, 23, 42, 0.5) !important;
+    border: 1px solid var(--border-glass) !important;
+    color: #94a3b8 !important;
+    border-radius: 8px !important;
+    height: 42px !important;
+    padding: 0.6rem 0.75rem !important;
+    transition: all 0.25s ease !important;
+}
+
+body .custom-file-label::after {
+    background-color: var(--accent-teal) !important;
+    color: #07090e !important;
+    border-left: none !important;
+    border-radius: 0 8px 8px 0 !important;
+    font-weight: 600 !important;
+    height: 40px !important;
+    padding: 0.6rem 1rem !important;
+}
+
+body .custom-file-input:focus ~ .custom-file-label {
+    border-color: var(--accent-teal) !important;
+    box-shadow: 0 0 8px var(--accent-teal-glow) !important;
+}
+
+/* Progress bar rediseñada */
+body .progress {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid var(--border-glass) !important;
+    height: 10px !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+}
+
+body .progress-bar {
+    background: linear-gradient(90deg, var(--accent-teal) 0%, #10b981 100%) !important;
+    border-radius: 6px !important;
+}
+
+/* Detalles del Panel de Computadoras (Ficha Técnica) */
+body #detallesComputadoraBody h6 {
+    font-size: 0.9rem !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    color: var(--accent-teal) !important;
+    border-bottom: 1px solid var(--border-glass) !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+body #detallesComputadoraBody table th {
+    font-weight: 600 !important;
+    color: #94a3b8 !important;
+    font-size: 0.85rem !important;
+    border: none !important;
+}
+
+body #detallesComputadoraBody table td {
+    color: #f1f5f9 !important;
+    font-size: 0.875rem !important;
+    border: none !important;
+}
+
+/* Editor de Archivo Texto */
+body #editFileForm textarea {
+    background-color: #05070b !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 12px !important;
+    color: #a7f3d0 !important; /* Estilo matriz / terminal */
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 0.95rem !important;
+    padding: 1.25rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Navegador del selector de Carpetas en Copiar/Mover */
+body select#carpeta_destino {
+    font-family: monospace !important;
+    font-size: 0.9rem !important;
+}
+
+/* Papelera de reciclaje items */
+body .papelera-item {
+    border-bottom: 1px solid var(--border-glass) !important;
+    background-color: transparent !important;
+    padding: 0.75rem 1rem !important;
+    transition: background-color 0.2s ease !important;
+}
+
+body .papelera-item:hover {
+    background-color: rgba(255, 255, 255, 0.01) !important;
+}
+
+/* Alertas estilo glassmorphism */
+body .alert {
+    border-radius: 10px !important;
+    font-size: 0.85rem !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* Filtros Rápidos */
+body select.form-control-sm, 
+body input.form-control-sm {
+    height: 34px !important;
+    font-size: 0.8rem !important;
+    padding: 0.25rem 0.5rem !important;
+}
+
+body #contadorRegistros {
+    color: #64748b !important;
+    font-weight: 500 !important;
+}
+
+/* ==========================================================================
+   Action Buttons (Toolbar) — Nexus OS Style
+   ========================================================================== */
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #94a3b8;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+    position: relative;
+}
+
+.action-btn:hover {
+    background: rgba(58, 179, 151, 0.12);
+    border-color: rgba(58, 179, 151, 0.3);
+    color: #3AB397;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(58, 179, 151, 0.15);
+}
+
+.action-btn:active {
+    transform: translateY(0px);
+}
+
+/* Toolbar container */
+#main-toolbar {
+    background: rgba(9, 12, 18, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Breadcrumb path links */
+.path-segment {
+    color: #94a3b8 !important;
+    text-decoration: none !important;
+    padding: 2px 6px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.path-segment:hover {
+    color: #3AB397 !important;
+    background: rgba(58, 179, 151, 0.1);
+}
+
+.path-separator {
+    color: #374151;
+    margin: 0 2px;
+    font-size: 0.7rem;
+}
+
+/* ==========================================================================
+   Folder Grid — Nexus OS Style
+   ========================================================================== */
+
+/* Contenedor del explorador de archivos */
+body #explorador-contenido,
+body #explorer-content {
+    padding: 0.75rem 0 !important;
+}
+
+/* El contenedor #vista-explorador debe ser bloque, no grid, para no interferir con folder-grid */
+#vista-explorador {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* Grid de carpetas — hasta 4 columnas responsivo */
+.folder-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+/* Tarjeta de carpeta individual */
+.folder-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem 0.75rem;
+    background: rgba(15, 19, 28, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    text-decoration: none !important;
+    color: #cbd5e1 !important;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    gap: 0.5rem;
+    min-height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.folder-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(58, 179, 151, 0) 50%, transparent);
+    transition: all 0.3s ease;
+}
+
+.folder-card:hover::before {
+    background: linear-gradient(90deg, transparent, rgba(58, 179, 151, 0.6) 50%, transparent);
+}
+
+.folder-card:hover {
+    background: rgba(58, 179, 151, 0.07);
+    border-color: rgba(58, 179, 151, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 0 15px rgba(58, 179, 151, 0.07);
+    color: #f1f5f9 !important;
+}
+
+.folder-card .folder-icon {
+    font-size: 2rem;
+    line-height: 1;
+    filter: drop-shadow(0 2px 6px rgba(58, 179, 151, 0.2));
+    transition: transform 0.2s ease;
+}
+
+.folder-card:hover .folder-icon {
+    transform: scale(1.08);
+}
+
+.folder-card .folder-name {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #94a3b8;
+    line-height: 1.2;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+.folder-card:hover .folder-name {
+    color: #e2e8f0;
+}
+
+/* Ícono de carpeta con color teal premium */
+.icon-folder {
+    color: #3AB397;
+}
+
+/* Archivos en la lista */
+.file-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.18s ease;
+    cursor: pointer;
+}
+
+.file-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.file-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+.file-icon-pdf    { background: rgba(239, 68,  68,  0.15); color: #ef4444; }
+.file-icon-img    { background: rgba(168, 85,  247, 0.15); color: #a855f7; }
+.file-icon-doc    { background: rgba(59,  130, 246, 0.15); color: #3b82f6; }
+.file-icon-xls    { background: rgba(34,  197, 94,  0.15); color: #22c55e; }
+.file-icon-zip    { background: rgba(234, 179, 8,   0.15); color: #eab308; }
+.file-icon-video  { background: rgba(249, 115, 22,  0.15); color: #f97316; }
+.file-icon-audio  { background: rgba(236, 72,  153, 0.15); color: #ec4899; }
+.file-icon-code   { background: rgba(6,   182, 212, 0.15); color: #06b6d4; }
+.file-icon-other  { background: rgba(100, 116, 139, 0.15); color: #64748b; }
+
+/* ==========================================================================
+   Sidebar — Secciones y Separadores
+   ========================================================================== */
+
+.sidebar-section-title {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #374151;
+    padding: 0.5rem 0 0.35rem;
+    margin-top: 0.5rem;
+}
+
+/* Widget Reloj en Sidebar */
+.clock-widget {
+    background: rgba(58, 179, 151, 0.06);
+    border: 1px solid rgba(58, 179, 151, 0.12);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    text-align: center;
+}
+
+.clock-widget #system-clock {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #3AB397;
+    font-family: 'Courier New', monospace;
+    line-height: 1;
+}
+
+.clock-widget #system-date {
+    font-size: 0.68rem;
+    color: #64748b;
+    margin-top: 0.2rem;
+    font-weight: 500;
+}
+
+/* Widgets Métricas */
+.metric-widget {
+    background: rgba(15, 19, 28, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 0.6rem 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.metric-widget .metric-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #475569;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.metric-widget .metric-bar {
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+}
+
+.metric-widget .metric-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #3AB397, #10b981);
+    transition: width 0.8s ease;
+}
+
+.metric-widget .metric-value {
+    font-size: 0.7rem;
+    color: #3AB397;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Footer Rediseñado
+   ========================================================================== */
+
+body footer.footer,
+#main-footer {
+    background: #07090e !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.04) !important;
+    color: #374151 !important;
+    font-size: 0.72rem !important;
+    padding: 0.65rem 1.5rem !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    margin-top: 0 !important;
+}
+
+/* Eliminar cualquier fondo Bootstrap residual en footer */
+footer.footer,
+footer {
+    background-color: #07090e !important;
+}
+
+
+/* ==========================================================================
+   Vista Explorador — Botones Cuadrícula / Lista
+   ========================================================================== */
+
+.vista-controles {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.vista-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    color: #64748b;
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.vista-btn:hover {
+    background: rgba(58, 179, 151, 0.08);
+    border-color: rgba(58, 179, 151, 0.2);
+    color: #94a3b8;
+}
+
+.vista-btn.active {
+    background: rgba(58, 179, 151, 0.12);
+    border-color: rgba(58, 179, 151, 0.35);
+    color: #3AB397;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Vista Lista — Transforms folder-grid y file-row al modo lista
+   ========================================================================== */
+
+/* Cuando el contenedor tiene clase vista-lista, las carpetas se muestran en fila */
+.vista-lista .folder-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.vista-lista .folder-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0.6rem 0.9rem;
+    min-height: auto;
+    gap: 0.75rem;
+}
+
+.vista-lista .folder-card .folder-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.vista-lista .folder-card .folder-name {
+    flex: 1;
+    font-size: 0.83rem;
+    font-weight: 500;
+    color: #e2e8f0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vista-lista .folder-card .folder-card-actions {
+    margin-top: 0 !important;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+/* Archivos en vista lista */
+.vista-lista .file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+/* ==========================================================================
+   Módulos internos — solo aplica cuando existe .modulo-page (no al explorador)
+   ========================================================================== */
+
+#mainContent.modulo-layout,
+#mainContent:has(.modulo-page) {
+    align-self: flex-start !important;
+}
+
+.modulo-page {
+    margin: 0;
+    padding: 0;
+}
+
+.modulo-page .modulo-header {
+    margin-bottom: 0.75rem;
+}
+
+.modulo-page .modulo-alert {
+    margin-bottom: 0.5rem;
+}
+
+.modulo-page .modulo-grid.row {
+    align-items: flex-start !important;
+    margin-left: -0.35rem;
+    margin-right: -0.35rem;
+}
+
+.modulo-page .modulo-grid > [class*="col-"] {
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    margin-bottom: 0.75rem;
+    align-self: flex-start;
+}
+
+.modulo-page .modulo-panel {
+    height: auto !important;
+}
+
+/* Servidores externos: grid compacto */
+.modulo-servidores .modulo-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.modulo-servidores .modulo-grid > [class*="col-"] {
+    flex: none !important;
+    max-width: none !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.modulo-servidores .srv-card {
+    height: auto !important;
+    background: rgba(15, 19, 28, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.modulo-servidores .srv-card:hover {
+    border-color: rgba(103, 232, 249, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.modulo-page .modulo-section {
+    margin-bottom: 0.85rem;
+}
+
+.modulo-page .modulo-section:last-child {
+    margin-bottom: 0;
+}
+
+.modulo-page .modulo-panel {
+    background: rgba(15, 19, 28, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.modulo-page .modulo-panel-head {
+    padding: 0.6rem 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #475569;
+}
+
+.modulo-page .modulo-panel-body {
+    padding: 0.85rem;
+}
+
+/* Módulos que usan max-width centrado */
+#mainContent .modulo-container {
+    max-width: 100%;
+}
+
+/* Overflow en paneles de doble columna */
+.vista-doble-panel {
+    min-height: 420px;
+}
+
+/* ==========================================================================
+   Custom file input — Nexus OS Style
+   ========================================================================== */
+
+.custom-file-label {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 10px !important;
+    color: #64748b !important;
+    height: 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 0.85rem !important;
+}
+
+.custom-file-label::after {
+    background: rgba(58, 179, 151, 0.15) !important;
+    border: none !important;
+    border-left: 1px solid rgba(58, 179, 151, 0.2) !important;
+    border-radius: 0 10px 10px 0 !important;
+    color: #3AB397 !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 0.82rem !important;
+}
+
+.custom-file-input:focus ~ .custom-file-label {
+    border-color: rgba(58, 179, 151, 0.4) !important;
+    box-shadow: 0 0 0 2px rgba(58, 179, 151, 0.08) !important;
+}
+
+/* ==========================================================================
+   Modal dark override — Asegurar estilo dark en todos los modales
+   ========================================================================== */
+
+.modal-content {
+    background: #0f131c !important;
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+    border-radius: 16px !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.modal-body .form-control,
+.modal-body select.form-control {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 9px !important;
+    color: #f1f5f9 !important;
+}
+
+/* Select options en dark mode */
+select option {
+    background: #0f131c;
+    color: #f1f5f9;
+}
+
+/* ==========================================================================
+   Progress bar override para subida de archivos
+   ========================================================================== */
+
+.progress {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border-radius: 4px !important;
+    height: 6px !important;
+}
+
+.progress-bar {
+    border-radius: 4px !important;
+    background: linear-gradient(90deg, #3AB397, #10b981) !important;
+}
+
+/* ==========================================================================
+   Vista previa de archivos
+   ========================================================================== */
+
+.file-row.selected {
+    background: rgba(58, 179, 151, 0.06) !important;
+    border-color: rgba(58, 179, 151, 0.35) !important;
+    box-shadow: 0 0 0 1px rgba(58, 179, 151, 0.12);
+}
+
+.preview-panel {
+    border-radius: 14px !important;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.preview-panel-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.preview-header-info {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 0.65rem;
+    row-gap: 0.15rem;
+    align-items: center;
+    min-width: 0;
+}
+
+.preview-header-icon {
+    grid-row: 1 / span 2;
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+.preview-header-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.preview-header-meta {
+    font-size: 0.68rem;
+    color: #64748b !important;
+}
+
+.preview-close-btn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: #94a3b8;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    flex-shrink: 0;
+}
+
+.preview-close-btn:hover {
+    background: rgba(239, 68, 68, 0.12);
+    border-color: rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+}
+
+.preview-body {
+    min-height: 120px;
+    max-height: 420px;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+#modalPreview .preview-body {
+    max-height: 60vh;
+}
+
+.preview-media-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0f131c;
+    border-radius: 10px;
+    padding: 0.5rem;
+    min-height: 160px;
+}
+
+.preview-media-wrap img,
+.preview-media-wrap video {
+    max-width: 100%;
+    max-height: 360px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.preview-pdf-wrap {
+    background: #0f131c;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 320px;
+}
+
+.preview-pdf-wrap iframe {
+    width: 100%;
+    height: 380px;
+    border: none;
+    background: #0f131c;
+}
+
+.preview-audio-wrap {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.preview-audio-icon {
+    font-size: 2rem;
+    color: #ec4899;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.preview-audio-wrap audio {
+    width: 100%;
+    max-width: 100%;
+}
+
+.preview-code {
+    margin: 0;
+    padding: 0.85rem;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: #cbd5e1;
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 360px;
+    overflow: auto;
+}
+
+.preview-code code {
+    color: inherit;
+    background: none;
+    padding: 0;
+}
+
+.preview-truncado {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    background: rgba(58, 179, 151, 0.08);
+    border: 1px solid rgba(58, 179, 151, 0.2);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.preview-empty {
+    color: #64748b;
+}
+
+.preview-skeleton {
+    animation: previewPulse 1.4s ease-in-out infinite;
+}
+
+@keyframes previewPulse {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 1; }
+}
+
+.preview-footer .btn {
+    border-radius: 8px;
+    font-size: 0.75rem;
+}
+
+#modalPreview .modal-header.preview-panel-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+@media (max-width: 991.98px) {
+    #preview-panel {
+        display: none !important;
+    }
+}
+

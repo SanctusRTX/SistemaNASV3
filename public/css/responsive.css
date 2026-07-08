@@ -1,0 +1,303 @@
+/* Estilos responsivos para Sistema NAS v3 */
+
+/* Estilos generales para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+    }
+    
+    /* Ajustes para el header */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Ajustes para el sidebar */
+    #sidebar {
+        position: fixed;
+        top: 56px;
+        left: -100%;
+        width: 80%;
+        height: calc(100% - 56px);
+        z-index: 1000;
+        transition: all 0.3s ease;
+        overflow-y: auto;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    #sidebar.show-mobile {
+        left: 0;
+    }
+    
+    /* Asegurar que el sidebar no se oculte con d-none en móviles */
+    #sidebar.d-none {
+        display: block !important;
+        left: -100%;
+    }
+    
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    
+    .sidebar-overlay.show {
+        display: block;
+    }
+    
+    /* Mejorar la navegación en el sidebar para móviles */
+    .mobile-nav .nav-item {
+        margin-bottom: 8px;
+    }
+    
+    .mobile-nav .nav-link {
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+    
+    .mobile-nav .nav-link:hover {
+        background-color: #f8f9fa;
+    }
+    
+    /* Ajustes para el contenido principal */
+    #mainContent {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+    
+    /* Ajustar el contenedor principal */
+    #mainContent .container {
+        padding: 10px;
+        border-radius: 8px;
+    }
+    
+    /* Ajustes para las tablas */
+    .table-responsive {
+        border: 0;
+        overflow-x: auto;
+    }
+    
+    .table th, .table td {
+        padding: 0.5rem;
+        white-space: nowrap;
+    }
+    
+    /* Hacer que las tablas se vean mejor en móviles */
+    .table-mobile-view {
+        display: block;
+        width: 100%;
+    }
+    
+    .table-mobile-view thead {
+        display: none;
+    }
+    
+    .table-mobile-view tbody {
+        display: block;
+        width: 100%;
+    }
+    
+    .table-mobile-view tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        padding: 0.5rem;
+    }
+    
+    .table-mobile-view td {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        padding: 0.5rem;
+        text-align: right;
+        position: relative;
+    }
+    
+    .table-mobile-view td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        position: absolute;
+        left: 0.5rem;
+        text-align: left;
+    }
+    
+    /* Ajustes para los botones de acción */
+    .btn-funcion {
+        padding: 0.25rem 0.5rem;
+        margin: 0.15rem;
+        font-size: 0.875rem;
+    }
+    
+    .btn-mobile-touch {
+        min-width: 40px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Ajustes para los modales */
+    .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+    
+    .modal-content {
+        border-radius: 8px;
+    }
+    
+    /* Ajustes para las tarjetas de archivos */
+    .card {
+        margin-bottom: 0.5rem;
+        border-radius: 8px;
+    }
+    
+    /* Ajustes para el breadcrumb */
+    .breadcrumb {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.85rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: block;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+    }
+    
+    /* Ajustes para los formularios */
+    .form-group {
+        margin-bottom: 0.5rem;
+    }
+    
+    .form-control {
+        font-size: 0.9rem;
+        height: calc(1.5em + 0.5rem + 2px);
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+    }
+    
+    /* Vista mejorada de archivos y carpetas para móviles */
+    .mobile-file-list .archivo-item,
+    .mobile-file-list .carpeta-item {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .mobile-file-list .archivo-item .file-header,
+    .mobile-file-list .carpeta-item .folder-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    
+    .mobile-file-list .file-icon,
+    .mobile-file-list .folder-icon {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+    
+    .mobile-file-list .file-name,
+    .mobile-file-list .folder-name {
+        font-weight: 500;
+        flex-grow: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .mobile-file-list .file-info,
+    .mobile-file-list .folder-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 0.8rem;
+        color: #6c757d;
+    }
+    
+    .mobile-file-list .file-actions,
+    .mobile-file-list .folder-actions {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin-top: 8px;
+    }
+    
+    /* Ajustes para el footer */
+    .footer {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    /* Ajustes para el modo oscuro en móviles */
+    body.dark-mode #sidebar {
+        background-color: #121212;
+    }
+    
+    body.dark-mode .mobile-file-list .archivo-item,
+    body.dark-mode .mobile-file-list .carpeta-item {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+    
+    body.dark-mode .mobile-nav .nav-link:hover {
+        background-color: #2d2d2d;
+    }
+}
+
+/* Estilos específicos para dispositivos muy pequeños */
+@media (max-width: 576px) {
+    .navbar-brand {
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .btn-group-sm > .btn, .btn-sm {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Ocultar columnas menos importantes en tablas */
+    .table-mobile-optimized th:nth-child(3),
+    .table-mobile-optimized td:nth-child(3),
+    .table-mobile-optimized th:nth-child(4),
+    .table-mobile-optimized td:nth-child(4) {
+        display: none;
+    }
+    
+    /* Ajustar el tamaño de los checkboxes para facilitar la selección */
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+}
